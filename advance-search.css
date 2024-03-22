@@ -7,14 +7,18 @@
   padding: 1px 8px;
 }
 
-.footer-2, .footer-1 {
+.footer .footer-2, .footer .footer-1 {
   font-size: 14px;
   font-family: arial, sans-serif;
   color: #bdc1c6;
 }
 
-body {
+* {
   font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
 }
 
 .search {
@@ -22,6 +26,8 @@ body {
   display: flex;
   flex-direction: row;
   width: 98%;
+  margin-left: 30px;
+  padding-right: 30px;
 }
 .search .entradas {
   display: flex;
@@ -43,6 +49,7 @@ body {
 .search .entradas .labels_2 {
   font-size: 10px;
   color: #313131;
+  padding-right: 30px;
 }
 
 h1 span {
@@ -55,8 +62,7 @@ h1 span {
 }
 
 .header-b {
-  margin-top: 50px;
-  margin-left: 40px;
+  margin-left: 60px;
   color: red;
   margin-bottom: 30px;
   font-size: 20px;
@@ -76,42 +82,67 @@ h1 span {
 }
 
 .container {
-  margin-left: 17px;
+  margin-left: 0px;
 }
 
-.boton {
-  margin: 20px 0px 20px 0px;
+.boton_cont {
+  padding-top: 20px;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.boton_cont .boton {
   background-color: #007bff;
   color: #ffffff;
-  padding: 0px 0px 0px 30px;
   border-radius: 5px;
+  width: 150px;
+  height: 30px;
   border: none;
   cursor: pointer;
 }
 
-.footer-1 {
-  margin-top: 240px;
-  padding: 15px 37px;
-  border-bottom: 1px solid #3c4043;
-  font-size: 15px;
-  color: #70757a;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.imagen_google {
+  margin: 20px 0px 0px 20px;
+  position: inherit;
 }
 
-.footer-2 {
+.google_img {
+  height: 40px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  height: -100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer .footer-1 {
+  padding: 15px 36px;
+  height: 48;
+  width: 100%;
+  border-top: 1px solid #3c4043;
+  border-bottom: 1px solid #3c4043;
+  font-size: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 20px;
-  color: #e8eaed;
-  margin-top: 25px;
-  height: 46px;
-  width: 505.183;
+  color: #474747;
 }
-.footer-2 a {
-  color: #70757a;
+.footer .footer-2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  justify-content: center;
+  justify-content: space-between;
+  height: 46px;
+  width: auto;
+  color: #474747;
+}
+.footer .footer-2 a {
+  color: #474747;
   padding: 15px;
   white-space: nowrap;
+  display: inline-block;
 }/*# sourceMappingURL=advance-search.css.map */
